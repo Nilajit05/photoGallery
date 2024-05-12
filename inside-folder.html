@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inside Folder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Use the correct version -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <i class="fas fa-camera"></i>
+    <h1 id="folderTitle">Inside </h1>
+</nav>
+<button class="back-button" onclick="navigateBack()">Back to Main Page</button>
+
+<div class="container">
+    <div class="main-content" id="mainContent">
+        <div class="folder-view active">
+            <h2 id="folderName">Folder Name</h2>
+            
+            <div class="photo-upload">
+                <input type="text" id="photoUrl" placeholder="Enter photo URL">
+                <button class="post" onclick="uploadPhoto()">Upload</button>
+            </div>
+
+            <div class="photos" id="photosContainer">
+                <!-- Photos will be rendered here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="inside-folder.js"></script>
+</body>
+</html>

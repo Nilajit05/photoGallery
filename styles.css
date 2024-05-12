@@ -1,0 +1,301 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Photo Gallery Page CSS for PC Folder Design */
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar i {
+    font-size: 36px; /* Larger icon size */
+}
+
+/* Folder title styles */
+.navbar h1 {
+    font-size: 24px; /* Larger font size */
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Sidebar styles */
+.sidebar {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Folder create styles */
+.folder-create input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px; /* Larger font size */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.folder-create button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.folder-create button:hover {
+    background-color: #136815; /* Darker green on hover */
+}
+
+/* Folders container styles */
+[name="foldersContainer"] {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Folder styles */
+.folder {
+    width: calc(30% - 20px); /* Adjust the width as needed */
+    max-width: 200px; /* Set a maximum width to prevent excessive shrinking */
+    height: 30px; /* Set the height to maintain consistency */
+    background-color: #f0e24e;
+    padding: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.folder:hover {
+    background-color: #b69f28; /* Darker yellow on hover */
+}
+
+/* Folder name styles */
+.folder-name {
+    font-size: 20px; /* Larger font size */
+}
+
+
+
+/* .folder-name {
+    flex: 1;
+} */
+
+.folder-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+
+.delete-button,
+.rename-button {
+    display: none;
+}
+
+/* Position the buttons inside the upper right side of the folder */
+.folder {
+    position: relative;
+}
+
+/* CSS for Delete and Rename Buttons */
+
+/* Initially hide the buttons */
+.delete-button,
+.rename-button {
+    display: none;
+}
+
+/* Position the buttons inside the upper right side of the folder */
+.folder {
+    position: relative;
+}
+
+.delete-button {
+    position: absolute;
+    top: 5px;
+    right: 60px; /* Adjust as needed */
+    background-color: #e14a4a; /* Red color */
+    padding: 2px 5px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin-right: 25px;
+}
+
+.rename-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #1976D2; /* Blue color */
+    padding: 2px 5px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin-left: 20px;
+}
+
+/* Show the buttons when hovering over the folder */
+.folder:hover .delete-button,
+.folder:hover .rename-button {
+    display: inline-block;
+}
+
+/* Add gap between the buttons */
+.rename-button {
+    margin-left: 5px;
+}
+
+
+
+
+
+.main-content {
+    flex: 2;
+    padding: 20px;
+}
+
+/* Folder view styles */
+.folder-view {
+    display: none;
+}
+
+.folder-view.active {
+    display: block;
+}
+
+.folder-view h2 {
+    margin-bottom: 20px;
+}
+
+.folder-view input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px; /* Larger font size */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.folder-view button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.folder-view button:hover {
+    background-color: #0e7d13;
+} 
+
+.folder-view .photos .del,
+.folder-view .photos .rename {
+    padding: 2px 5px;
+    margin-right: 5px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.folder-view .photos .del {
+    background-color: #f8564b; /* Red color for delete button */
+    color: white;
+}
+
+.folder-view .photos .rename {
+    background-color: #676cfa; /* Blue color for rename button */
+    color: white;
+}
+
+.folder-view .photos .del:hover {
+    background-color: #c60606; /* Darken the background color on hover */
+}
+
+.folder-view .photos .rename:hover {
+    background-color: #3c059a; /* Darken the background color on hover */
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    position: relative;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.photo .actions {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.photo .actions {
+    display: none;
+}
+
+.photo:hover .actions {
+    display: block;
+}
+
+.back-button {
+    background-color: #0d34c3; /* Red */
+    border: none;
+    left: 10px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+}
+
+.back-button:before {
+    content: '\2190'; /* Unicode for left arrow */
+    position: absolute;
+    left: 1px;
+}
+
+.back-button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+button:hover {
+    background-color: #45a049;
+}
